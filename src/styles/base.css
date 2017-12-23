@@ -1,0 +1,8 @@
+/**
+ * Base style import
+ */
+
+ @import "styles/base/normalize.css";
+ @import "styles/base/layout.css";
+ @import "styles/base/type.css";
+ @import "styles/base/elements.css";

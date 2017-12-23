@@ -1,0 +1,98 @@
+@import "styles/base/variables.css";
+
+.hero {
+  @neat-span-columns 12;
+  background: linear-gradient(180deg, var(--gradient1), var(--gradient2));
+  height: 100vh;
+  padding: 20px;
+  overflow: scroll;
+  color: white; 
+}
+    
+.title {
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+
+.cryptoCards { 
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.coinCard {
+  display: inline-flex;
+  position: relative;
+  height: 400px;
+  width: 600px;
+  margin: 5px 50px 50px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 3px 3px 18px 3px rgba(0,0,0,0.3) ;
+}
+
+.coinSymbol {
+  position: relative;
+  color: var(--bluenight);
+  font-size: 35px;
+  top: 20px;
+  left: 20px;
+}
+
+.coinPrice {
+  position: absolute;
+  color: var(--bluenight);
+  font-size: 20px;
+  left: 22px;
+  margin-top: 60px;
+}
+
+.diffStats {
+  position: relative;
+  left: 75px;
+  color: black;
+  margin-top: 15px;
+}
+
+.diff1H {
+  width: 120px;
+}
+
+.diff24H {
+  width: 120px;
+}
+
+.diff7D {
+  width: 120px;
+}
+
+.timeDiff {
+  color: var(--type_grey);
+  font-size: 12px;  
+  position: relative; 
+  top: 5px;
+  left: 40px;
+}
+
+.amountDiff {
+  font-size: 18px;  
+  position: relative; 
+  top: 25px;
+  left: -20px;
+}
+
+.coinGraph {
+  position: absolute;
+  left: 50px;
+  margin-top: 75px;
+}
+
+.otherStats {
+  position: relative;
+  top: 275px;
+  left: -310px;
+  color: black;
+  width: 500px;
+}

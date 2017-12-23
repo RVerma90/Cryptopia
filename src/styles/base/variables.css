@@ -1,0 +1,19 @@
+/* Imports all the /variables into one file so just have to include one */
+
+/* Colours */
+@import 'styles/base/variables/colours.css';
+
+/* Media Queries */
+@import 'styles/base/variables/media.css';
+
+/* Mixed variables */
+:root {
+  /* Generic */
+  --ease: cubic-bezier(0.19, 1, 0.22, 1);
+  --header: 110px;
+}
+
+.italic {
+  display: block;
+  font-style: italic;
+}

@@ -1,0 +1,11 @@
+@import "styles/base/variables.css";
+
+.about {
+  @neat-span-columns 12;
+  background: linear-gradient(to right, var(--bluenight), var(--bluegem));
+  height: 100vh;
+}
+
+.app {
+  text-align: center;
+}

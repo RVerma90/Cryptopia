@@ -1,0 +1,183 @@
+/**
+ * Layout styles
+ * Where the base of the html is styled and includes reusable styles
+ */
+
+ @import 'styles/base/variables.css';
+ 
+ body,
+ html {
+   position: relative;
+   height: 100%;
+   width: 100%;
+   font-family: Helvetica Neue, Helvetica, sans-serif;
+   font-weight: normal;
+   color: var(--type);
+   font-size: 16px;
+   -webkit-font-smoothing: antialiased;
+ }
+ 
+ ul {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+ }
+ 
+ img {
+   max-width: 100%;
+ }
+ 
+ section {
+   position: relative;
+   max-width: 100%;
+   height: calc(100vh - 76px);
+   margin-left: auto;
+   margin-right: auto;
+ }
+ 
+ .hide {
+   display: none;
+ }
+ 
+ .no-overflow {
+   overflow: hidden;
+ }
+ 
+ .full {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   left: 0;
+   top: 0;
+ }
+ 
+ .fullBackgroundImage {
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
+ }
+ 
+ .center {
+   position: absolute;
+   left: 0;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   margin: auto;
+ }
+ 
+ .verticalCenter {
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   margin: auto;
+ }
+ 
+ .horizontalCenter {
+   position: absolute;
+   left: 0;
+   right: 0;
+   margin: auto;
+ }
+ 
+ .clear {
+   &::after,
+   &::before {
+     content: '';
+     clear: both;
+     display: table;
+   }
+ }
+ 
+ .ellipsis {
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   display: inline-block;
+ }
+ 
+ /* Like .maxWidth but without the max-width (just does padding) */
+ .padding {
+   padding: 0 40px;
+   @media (--phone-landscape) {
+     padding: 0 30px;
+   }
+   @media (--phone-portrait) {
+     padding: 0 20px;
+   }
+ }
+ 
+ /* Maxwidth */
+ .maxWidth {
+   composes: padding;
+   width: 100%;
+   max-width: 1240px;
+   margin: 0 auto;
+ }
+ 
+ /* Fade in */
+ @keyframes fadeIn {
+   0% {
+     opacity: 0;
+   }
+   100% {
+     opacity: 1;
+   }
+ }
+ 
+ .fadeIn {
+   animation-name: fadeIn;
+   animation-duration: 1s;
+   animation-delay: 0.5s;
+   animation-timing-function: ease;
+   animation-iteration-count: once;
+   animation-fill-mode: backwards;
+ }
+ 
+ @keyframes fadeInUp {
+   0% {
+     opacity: 0;
+     transform: translateY(30px);
+   }
+   100% {
+     opacity: 1;
+     transform: translateY(0px);
+   }
+ }
+ 
+ .fadeInUp {
+   animation-name: fadeInUp;
+   animation-duration: 2s;
+   animation-timing-function: var(--ease);
+   animation-iteration-count: once;
+   animation-fill-mode: backwards;
+ }
+ 
+ @keyframes fadeLeft {
+   0% {
+     transform: translateX(-50px);
+     opacity: 0;
+   }
+   100% {
+     transform: translateX(0px);
+     opacity: 1;
+   }
+ }
+ 
+ .fadeInLeft {
+   animation-name: fadeLeft;
+   animation-duration: 1s;
+   animation-timing-function: var(--ease);
+   animation-fill-mode: backwards;
+ }
+ 
+ /* Appstore button */
+ .appstore {
+   width: 96px;
+   height: 35px;
+   display: block;
+   background-size: 100% auto;
+   background-repeat: no-repeat;
+   background-position: center;
+ }
+ 

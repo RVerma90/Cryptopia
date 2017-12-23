@@ -1,0 +1,9 @@
+/* Media Queries */
+
+@custom-media --phone-portrait (max-width: 480px);
+@custom-media --phone-landscape (max-width: 670px);
+@custom-media --tablet-portrait (max-width: 768px);
+@custom-media --tablet-landscape (max-width: 1024px);
+@custom-media --desktop-small (max-width: 1240px);
+@custom-media --desktop-medium (max-width: 1320px);
+@custom-media --desktop-large (max-width: 1440px);

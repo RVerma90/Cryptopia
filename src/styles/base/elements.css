@@ -1,0 +1,33 @@
+/**
+ * Elements
+ * Reusable and common element styles
+ *
+ */
+
+ @import 'styles/base/variables.css';
+ 
+ button,
+ .button {
+   white-space: nowrap;
+   color: white;
+   padding: 13px 30px;
+   height: 50px;
+   border-radius: 25px;
+   display: inline-block;
+   background-color: white;
+   outline: none;
+   cursor: pointer;
+   user-select: none;
+   border: 1px solid var(--line);
+   color: var(--green);
+   -webkit-font-smoothing: antialiased;
+   transition: background-color .2s ease;
+   &:hover {
+     background-color: var(--bg_grey);
+   }
+ }
+ 
+ 
+ 
+ 
+ 

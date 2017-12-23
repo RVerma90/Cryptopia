@@ -1,0 +1,25 @@
+@import 'styles/base/variables.css';
+@import 'styles/base.css';
+
+.header {
+  /* background: linear-gradient(to right, var(--bluenight), var(--bluesky)); */
+  background-color: var(--gradient1);
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  height: 75px;
+}
+
+.logo {
+  margin-top: 12px;
+  position: relative;
+  z-index: 9;
+  width: 76px;
+  height: 76px;
+  display: inline-block;
+  background-image: url(./images/logo.svg);
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: 76px auto;
+}
